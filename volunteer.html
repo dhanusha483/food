@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Smart Food Bank - Volunteer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="volunteer.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Volunteer with Smart Food Bank</h1>
+      <nav>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/Work.html">Home</a></li>
+          <li><a href="http://127.0.0.1:5500/donor.html">Donate</a></li>
+          <li><a href="volunteer.html">Volunteer</a></li>
+          <li><a href="http://127.0.0.1:5500/Work.html">About Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="volunteer-intro">
+        <h2>Why Volunteer with Us?</h2>
+        <p>
+          By volunteering with Smart Food Bank, you can make a real difference
+          in the fight against food insecurity in your community. Whether you're
+          interested in sorting donations, helping with distribution, or working
+          on outreach and fundraising efforts, we have a role for you. Our
+          volunteers enjoy:
+        </p>
+        <ul>
+          <li>Flexible scheduling options to fit your availability</li>
+          <li>A supportive and welcoming community of volunteers and staff</li>
+          <li>
+            The satisfaction of knowing that you're making a positive impact on
+            your community
+          </li>
+        </ul>
+      </section>
+      <section class="volunteer-application">
+        <h2>Volunteer Application</h2>
+        <p>To apply to volunteer with us, please fill out the form below:</p>
+        <form action="submit-application.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required />
+
+          <label for="availability">Availability:</label>
+          <textarea id="availability" name="availability" required></textarea>
+
+          <label for="interests">Interests:</label>
+          <textarea id="interests" name="interests" required></textarea>
+
+          <button type="submit">Submit Application</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Copyright ©
+        <!-- Use JavaScript to output the current year -->
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        Smart Food Bank. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
